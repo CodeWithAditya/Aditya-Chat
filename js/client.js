@@ -28,7 +28,7 @@ const name = prompt("Enter Your Name:")
 socket.emit('new-user-joined', name);
 
 socket.on('user-joined', name => {
-    append(`${name} joined the chat`, `right`)
+    append(`${name} joined the chat`, `left`)
 })
 
 socket.on('receive', data => {
